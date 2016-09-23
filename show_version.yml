@@ -1,0 +1,14 @@
+---
+- name: Run show clock commands
+  hosts: cisco-devices
+  gather_facts: false
+  connection: local
+
+  tasks:
+    - name: RUN 'SHOW VERSION'
+      ios_command:
+        host: "{{ ansible_ssh_host }}"
+        username: "admin"
+        password: "password_01"
+        commands:
+          - show version
