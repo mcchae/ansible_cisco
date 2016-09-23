@@ -1,0 +1,4 @@
+---
+ansible_ssh_host: 10.31.1.254
+ansible_ssh_user: admin
+ansible_ssh_pass: admin_pass
